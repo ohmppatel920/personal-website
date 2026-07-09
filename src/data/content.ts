@@ -97,6 +97,13 @@ export const work: Work[] = [
     tags: ["Leadership", "Strategy", "Social · 500K+"],
     image: "/projects/volleyball.jpg",
     imgPos: "center",
+    links: [
+      {
+        label: "Championship article",
+        href: "https://www.browndailyherald.com/article/2026/04/mens-club-volleyball-crowned-d1aaa-national-champions-in-historic-win",
+      },
+      { label: "Instagram", href: "https://www.instagram.com/brownmensvolleyball" },
+    ],
   },
   {
     kind: "Project",
@@ -151,12 +158,12 @@ export const work: Work[] = [
   },
 ];
 
-// Remaining roles, kept compact.
+// Remaining roles, kept compact — reverse-chronological.
 export const moreExperience: MoreItem[] = [
-  { org: "Yale School of Medicine", role: "SURF Scholar — Miller-Jensen Lab", dates: "Summer 2024" },
-  { org: "Stony Brook University", role: "Materials Researcher (published abstract)", dates: "Summer 2022" },
   { org: "University Orthopedics", role: "X-Ray Reading Shadow", dates: "Spring 2025" },
+  { org: "Yale School of Medicine", role: "SURF Scholar — Miller-Jensen Lab", dates: "Summer 2024" },
   { org: "Rhode Island Hospital", role: "Pediatric Clinic Volunteer & Shadow", dates: "2023–24" },
+  { org: "Stony Brook University", role: "Materials Researcher (published abstract)", dates: "Summer 2022" },
 ];
 
 export const skillGroups: SkillGroup[] = [
