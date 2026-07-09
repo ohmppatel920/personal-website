@@ -35,7 +35,7 @@ export default function ParallaxImage({
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            objectPosition: "center 52%",
+            objectPosition: "center 42%",
           }}
         />
       </motion.div>
