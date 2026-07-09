@@ -44,11 +44,11 @@ export const work: Work[] = [
   {
     kind: "Experience",
     title: "Eli Lilly",
-    sub: "Data & Software Engineering Intern",
+    sub: "Data & Software Intern",
     dates: "May 2026 – Present",
     blurb:
-      "Data & software engineering on the ADME team, building internal tooling used across the department — including a full-stack platform that cut manual PK review time 65% across 6 projects.",
-    tags: ["Python", "FastAPI", "LLM APIs", "Full-stack"],
+      "Developed the Python backend for a proprietary internal application that aggregates and analyzes pharmacokinetic data across multiple drug-discovery programs, deployed as an interactive web app adopted by scientists — plus an LLM document-extraction pipeline that substantially cut manual review time.",
+    tags: ["Python", "FastAPI", "LLM APIs", "Backend"],
     image: "/projects/lilly.jpg",
     imgPos: "center",
   },
@@ -102,8 +102,8 @@ export const work: Work[] = [
     sub: "Eli Lilly · internal tool",
     dates: "2026",
     blurb:
-      "The platform I built at Lilly: a full-stack app that aggregates, analyzes, and compares pharmacokinetic data, paired with an LLM pipeline that structures data from unformatted clinical reports — replacing manual transcription with automated ingestion. Internal / proprietary; shipping to the Lilly network.",
-    tags: ["Python", "FastAPI", "LLM APIs", "Full-stack", "Data"],
+      "The proprietary internal tool I built at Lilly: a Python backend that aggregates and analyzes pharmacokinetic data across multiple drug-discovery programs, deployed as an interactive web app, with an LLM document-extraction pipeline that substantially reduced manual review time. Internal / proprietary.",
+    tags: ["Python", "FastAPI", "LLM APIs", "Backend", "Data"],
     graphic: "pk",
   },
   {
