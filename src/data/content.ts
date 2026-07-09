@@ -31,6 +31,8 @@ export const about = {
     ],
     period: "Sep 2023 – May 2028",
     honor: "APIA Nakupuna Foundation Scholarship",
+    coursework:
+      "Data Structures & Algorithms · Systems · Machine Learning · Applied Mathematics",
   },
 };
 
@@ -55,11 +57,11 @@ export const work: Work[] = [
   {
     kind: "Experience",
     title: "Yale — AMGEN Scholar",
-    sub: "Engineering Researcher",
-    dates: "Summer 2025",
+    sub: "Engineering Researcher · data pipelines",
+    dates: "Summer 2024 & 2025",
     blurb:
-      "Built a Python pipeline processing high-dimensional data to quantify and visualize markers across conditions, surfacing trends that drove follow-up experiments. Full ABRCMS travel award; Springer Nature co-author (under review).",
-    tags: ["Python", "Data Pipelines", "Data Viz"],
+      "Built a Python / FlowKit data pipeline to process high-dimensional flow-cytometry files, automating the quantification and visualization of 8 markers across experimental conditions — surfacing trends that drove follow-up experiments. Full ABRCMS travel award; Springer Nature co-author (under review).",
+    tags: ["Python", "Data Pipelines", "Automation", "Data Viz"],
     image: "/projects/yale.jpg",
     imgPos: "left top",
   },
@@ -112,9 +114,26 @@ export const work: Work[] = [
     sub: "Solo build · LLM / retrieval systems",
     dates: "2025",
     blurb:
-      "A benchmarking harness that isolates retrieval vs. generation failure modes so a RAG pipeline can be tuned on evidence, not vibes. Benchmarked 6+ configs across chunk size, embedding model, and top-k; a cross-encoder reranker gave the biggest gain.",
+      "A benchmarking harness over SEC 10-K filings that isolates retrieval vs. generation failure modes so a RAG pipeline can be tuned on evidence, not vibes. Benchmarked 6+ configs (chunk size, embedding model, top-k) on a 30-question eval set; a cross-encoder reranker gave the biggest single-step gain in recall and faithfulness.",
     tags: ["ChromaDB", "RAGAS", "DeepEval", "Gemini API", "Python"],
+    links: [
+      { label: "GitHub", href: "https://github.com/ohmppatel920/rag-eval-harness" },
+    ],
     graphic: "rag",
+  },
+  {
+    kind: "Project",
+    title: "This Site",
+    sub: "Solo build · design + front-end",
+    dates: "2026",
+    blurb:
+      "The portfolio you're reading — designed and built from scratch: an immersive dark canvas, editorial typography, a magnetic custom cursor, scroll-reveal motion, and a signature commit-line divider. Shipped end to end and deployed on Vercel.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion"],
+    links: [
+      { label: "GitHub", href: "https://github.com/ohmppatel920/personal-website" },
+      { label: "Live", href: "https://ohmppatel.dev" },
+    ],
+    graphic: "code",
   },
   {
     kind: "Project",
@@ -144,7 +163,7 @@ export const skillGroups: SkillGroup[] = [
   { label: "Languages", items: ["Python", "TypeScript", "Java", "SQL", "MATLAB"] },
   {
     label: "Frameworks & Tools",
-    items: ["FastAPI", "Pandas", "NumPy", "Plotly", "Pytest", "Streamlit"],
+    items: ["React / Next.js", "FastAPI", "Tailwind", "Pandas", "NumPy", "Pytest", "Streamlit"],
   },
   {
     label: "Data · ML · LLM",

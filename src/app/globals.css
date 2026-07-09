@@ -851,6 +851,21 @@ a {
   color: var(--brown);
   margin-top: 0.7rem;
 }
+.edu-course {
+  font-size: 0.85rem;
+  color: var(--bone-dim);
+  margin-top: 0.8rem;
+  line-height: 1.5;
+}
+.edu-course-label {
+  display: inline-block;
+  font-family: var(--font-mono-jb), monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bone-faint);
+  margin-right: 0.55rem;
+}
 
 /* Atmospheric parallax band */
 .atmos-band {

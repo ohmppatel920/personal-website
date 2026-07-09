@@ -42,6 +42,10 @@ export default function About() {
               <div className="edu-honor">
                 {about.education.honor} · {about.education.period}
               </div>
+              <div className="edu-course">
+                <span className="edu-course-label">Coursework</span>
+                {about.education.coursework}
+              </div>
             </div>
           </div>
         </Reveal>
