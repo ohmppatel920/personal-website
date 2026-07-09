@@ -60,8 +60,8 @@ export const work: Work[] = [
     sub: "Engineering Researcher · data pipelines",
     dates: "Summer 2024 & 2025",
     blurb:
-      "Built a Python / FlowKit data pipeline to process high-dimensional flow-cytometry files, automating the quantification and visualization of 8 markers across experimental conditions — surfacing trends that drove follow-up experiments. Full ABRCMS travel award; Springer Nature co-author (under review).",
-    tags: ["Python", "Data Pipelines", "Automation", "Data Viz"],
+      "Built a Python / FlowKit data pipeline to process high-dimensional flow-cytometry (.fcs) files, quantifying and visualizing 8 markers across experimental conditions — surfacing trends that drove follow-up experiments. Full ABRCMS travel award; Springer Nature co-author (under review).",
+    tags: ["Python", "FlowKit", "Data Pipelines", "Data Viz"],
     image: "/projects/yale.jpg",
     imgPos: "left top",
   },
