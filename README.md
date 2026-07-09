@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ohm Patel — Personal Site
 
-## Getting Started
+A dark, immersive personal site framing Ohm's positioning at the **healthcare × software** intersection. Built with Next.js 16, React 19, TypeScript, Tailwind v4, Framer Motion, and Lenis smooth-scroll. Design cues: Active Theory (immersive dark, motion) + editorial typography (Fraunces / Inter / JetBrains Mono). Signature element: an animated ECG "pulse" divider.
 
-First, run the development server:
+## Run it locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd site
+npm install     # first time only
+npm run dev     # → http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build for production:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build && npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Edit your content — one file
 
-## Learn More
+**Everything** (experience, projects, skills, leadership, clinical, links, copy) lives in **`src/data/content.ts`**. Change text there and the sections update automatically. Types are in `src/data/types.ts`.
 
-To learn more about Next.js, take a look at the following resources:
+### Add a new project (frictionless)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Append one object to the `projects` array in `src/data/content.ts`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```ts
+{
+  title: "My New Project",
+  blurb: "One-sentence hook describing what it does.",
+  bullets: ["Detail shown on hover.", "Another detail."],
+  tags: ["Next.js", "Postgres"],
+  year: "2026",
+  links: [{ label: "Live demo", href: "https://…" }], // optional
+  image: "/projects/my-project.jpg",                   // optional (drop file in public/projects/)
+}
+```
 
-## Deploy on Vercel
+The showcase grid renders any number of projects — no component changes needed.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Swap photos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Files live in `public/`:
+
+- `headshot.jpg` — About portrait
+- `clouds.jpg` — atmospheric parallax band
+- `Ohm-Patel_Resume.pdf` — the résumé the site links to
+
+Replace any of these files (keep the same names) to update the site. Source images were HEIC/JPEG converted with macOS `sips`.
+
+## Design tokens
+
+Colors, fonts, and spacing are CSS variables at the top of `src/app/globals.css` (`--ink`, `--teal`, `--peri`, `--brown`, etc.). Change them there to retune the palette globally.
+
+## Notes
+
+- **Brown University** is referenced by name and by its seal-brown accent color only — no trademarked logos, seal, or athletic marks are used.
+- Motion fully respects `prefers-reduced-motion` (glow, smooth-scroll, and reveals all collapse).
+- The custom cursor and magnetic buttons activate only on fine-pointer devices.
+
+## Deploy to Vercel
+
+1. Push `site/` to a GitHub repo (a git repo is already initialized in this folder).
+2. Import it at [vercel.com/new](https://vercel.com/new) — no configuration needed; Next.js is detected automatically.
+3. Ship. Add a custom domain in the Vercel dashboard when ready.
