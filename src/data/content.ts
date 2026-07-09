@@ -18,7 +18,7 @@ export const profile = {
 
 export const about = {
   photo: "/headshot.jpg",
-  atmosphere: "/clouds.jpg",
+  atmosphere: "/about-sunset.jpg",
   paragraphs: [
     "I like building things end to end — the data layer, the backend, the interface, and the decisions about what's worth building at all. That instinct shows up everywhere: full-stack apps and ML pipelines, but also captaining a team to a national title and running a student publication as editor-in-chief.",
     "Right now I'm a data & software engineer at Eli Lilly, shipping tools used across the department. I move fast, sweat the details, and care as much about whether a product lands with people as whether the code is clean. Next: SWE or product at a place building at scale.",
