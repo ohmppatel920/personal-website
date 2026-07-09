@@ -83,11 +83,16 @@ export default function WorkGrid({
         <Reveal delay={0.05}>
           <div className="more">
             <span className="more-label">Also</span>
-            {moreExperience.map((m) => (
-              <span className="more-item" key={m.org}>
-                <b>{m.role}</b> · {m.org} · {m.dates}
-              </span>
-            ))}
+            <div className="more-list">
+              {moreExperience.map((m) => (
+                <div className="more-item" key={m.org}>
+                  <span className="more-role">{m.role}</span>
+                  <span className="more-meta">
+                    {m.org} · {m.dates}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </Reveal>
       )}

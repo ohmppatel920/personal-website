@@ -47,7 +47,7 @@ export const work: Work[] = [
     sub: "Data & Software Engineering Intern",
     dates: "May 2026 – Present",
     blurb:
-      "Building a full-stack app that aggregates and analyzes large datasets across 6 projects — cutting manual review time 65% — plus an LLM pipeline that structures data from unformatted reports. Shipping to the company network.",
+      "Data & software engineering on the ADME team, building internal tooling used across the department — including a full-stack platform that cut manual PK review time 65% across 6 projects.",
     tags: ["Python", "FastAPI", "LLM APIs", "Full-stack"],
     image: "/projects/lilly.jpg",
     imgPos: "center",
@@ -95,6 +95,16 @@ export const work: Work[] = [
     tags: ["Leadership", "Strategy", "Social · 500K+"],
     image: "/projects/volleyball.jpg",
     imgPos: "center",
+  },
+  {
+    kind: "Project",
+    title: "PK Data Platform",
+    sub: "Eli Lilly · internal tool",
+    dates: "2026",
+    blurb:
+      "The platform I built at Lilly: a full-stack app that aggregates, analyzes, and compares pharmacokinetic data, paired with an LLM pipeline that structures data from unformatted clinical reports — replacing manual transcription with automated ingestion. Internal / proprietary; shipping to the Lilly network.",
+    tags: ["Python", "FastAPI", "LLM APIs", "Full-stack", "Data"],
+    graphic: "pk",
   },
   {
     kind: "Project",
