@@ -107,6 +107,21 @@ export const work: Work[] = [
   },
   {
     kind: "Project",
+    title: "sideOut — Jump Lab",
+    sub: "Solo build · computer vision",
+    dates: "2026",
+    blurb:
+      "Turns one side-view phone video into a full jump readout: MediaPipe pose estimation (33 points/frame) extracts height, reach, approach velocity, and load/takeoff/landing timing as an annotated skeleton overlay. Shipped like a product — fully typed, 87%-covered test suite, Docker, CI/CD; local-first, no cloud.",
+    tags: ["Python", "Computer Vision", "MediaPipe", "OpenCV", "pytest · CI/CD"],
+    image: "/projects/sideout.jpg",
+    imgPos: "center 62%",
+    links: [
+      { label: "Live demo", href: "https://ohmppatel920.github.io/sideout/" },
+      { label: "GitHub", href: "https://github.com/ohmppatel920/sideout" },
+    ],
+  },
+  {
+    kind: "Project",
     title: "PK Data Platform",
     sub: "Eli Lilly · internal tool",
     dates: "2026",
