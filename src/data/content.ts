@@ -49,7 +49,7 @@ export const work: Work[] = [
     sub: "Data & Software Intern",
     dates: "May 2026 – Present",
     blurb:
-      "Developed the Python backend for a proprietary internal application that aggregates and analyzes pharmacokinetic data across multiple drug-discovery programs, deployed as an interactive web app adopted by scientists — plus an LLM document-extraction pipeline that substantially cut manual review time.",
+      "Developed the Python backend for a proprietary internal application that analyzes real data, deployed as an interactive web app adopted by scientists — plus an LLM document-extraction pipeline that substantially cut manual review time.",
     tags: ["Python", "FastAPI", "LLM APIs", "Backend"],
     image: "/projects/lilly.jpg",
     imgPos: "center",
