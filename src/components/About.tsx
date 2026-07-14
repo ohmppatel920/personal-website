@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { about } from "@/data/content";
 import Reveal from "./Reveal";
 import ParallaxImage from "./ParallaxImage";
@@ -15,37 +14,29 @@ export default function About() {
       </div>
 
       <div className="about-grid">
-        <Reveal className="about-photo">
-          <Image
-            src={about.photo}
-            alt="Portrait of Ohm Patel"
-            width={900}
-            height={1200}
-            priority
-          />
-        </Reveal>
-
-        <Reveal delay={0.1}>
+        <Reveal>
           <div className="about-copy">
             {about.paragraphs.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
+          </div>
+        </Reveal>
 
-            <div className="edu">
-              <p className="eyebrow">Education</p>
-              <div className="edu-school">{about.education.school}</div>
-              {about.education.degrees.map((d) => (
-                <div className="edu-line" key={d}>
-                  {d}
-                </div>
-              ))}
-              <div className="edu-honor">
-                {about.education.honor} · {about.education.period}
+        <Reveal delay={0.1}>
+          <div className="edu">
+            <p className="eyebrow">Education</p>
+            <div className="edu-school">{about.education.school}</div>
+            {about.education.degrees.map((d) => (
+              <div className="edu-line" key={d}>
+                {d}
               </div>
-              <div className="edu-course">
-                <span className="edu-course-label">Coursework</span>
-                {about.education.coursework}
-              </div>
+            ))}
+            <div className="edu-honor">
+              {about.education.honor} · {about.education.period}
+            </div>
+            <div className="edu-course">
+              <span className="edu-course-label">Coursework</span>
+              {about.education.coursework}
             </div>
           </div>
         </Reveal>
