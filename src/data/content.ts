@@ -49,7 +49,7 @@ export const work: Work[] = [
     sub: "Data & Software Intern",
     dates: "May 2026 – Present",
     blurb:
-      "Developed the Python backend for a proprietary internal application that analyzes real data, deployed as an interactive web app adopted by scientists — plus an LLM document-extraction pipeline that substantially cut manual review time.",
+      "Developed an internal application serving scientists across the department with data collation, integration, and analysis. Built and deployed an LLM-powered extraction pipeline to substantially reduce manual data-review time.",
     tags: ["Python", "FastAPI", "LLM APIs", "Backend"],
     image: "/projects/lilly.jpg",
     imgPos: "center",
@@ -119,16 +119,6 @@ export const work: Work[] = [
       { label: "Live demo", href: "https://ohmppatel920.github.io/sideout/" },
       { label: "GitHub", href: "https://github.com/ohmppatel920/sideout" },
     ],
-  },
-  {
-    kind: "Project",
-    title: "PK Data Platform",
-    sub: "Eli Lilly · internal tool",
-    dates: "2026",
-    blurb:
-      "The proprietary internal tool I built at Lilly: a Python backend that aggregates and analyzes pharmacokinetic data across multiple drug-discovery programs, deployed as an interactive web app, with an LLM document-extraction pipeline that substantially reduced manual review time. Internal / proprietary.",
-    tags: ["Python", "FastAPI", "LLM APIs", "Backend", "Data"],
-    graphic: "pk",
   },
   {
     kind: "Project",
