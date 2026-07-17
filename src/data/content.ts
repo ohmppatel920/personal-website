@@ -49,7 +49,7 @@ export const work: Work[] = [
     sub: "Data & Software Intern",
     dates: "May 2026 – Present",
     blurb:
-      "Developed an internal application serving scientists across the department with data collation, integration, and analysis. Built and deployed an LLM-powered extraction pipeline to substantially reduce manual data-review time.",
+      "Developed an internal application using an LLM-powered extraction pipeline. Deployed the tool, improving accessibility among scientists.",
     tags: ["Python", "FastAPI", "LLM APIs", "Backend"],
     image: "/projects/lilly.jpg",
     imgPos: "center",
