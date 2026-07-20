@@ -10,7 +10,7 @@ export const profile = {
   place: "Providence, RI · Indianapolis, IN",
   email: "ohm_patel@brown.edu",
   links: {
-    resume: "/Ohm-Patel_Resume.pdf",
+    resume: "/OhmPatel_Resume.pdf",
     github: "https://github.com/ohmppatel920",
     linkedin: "https://www.linkedin.com/in/ohmppatel",
   } as Record<string, string>,
