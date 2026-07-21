@@ -107,6 +107,22 @@ export const work: Work[] = [
   },
   {
     kind: "Project",
+    title: "Cairn — Course Copilot",
+    sub: "Solo build · PRD + live AI product",
+    dates: "2026",
+    blurb:
+      "Turns Brown's ~5,400-section shopping period into a decision: describe your constraints, get grounded course suggestions, then compare them on a board that flags schedule conflicts and total workload. The ranker never invents a rating and conflict detection is deterministic (no LLM time-math) — backed by a full PRD and a safety-engineered serverless backend (reserve-before-spend budget ceiling, atomic rate limiting, fail-closed fallback).",
+    tags: ["Product / PRD", "AI grounding & eval", "JavaScript", "Serverless", "LLM guardrails"],
+    image: "/projects/cairn.jpg",
+    imgPos: "top",
+    links: [
+      { label: "Live demo", href: "https://ohmppatel920.github.io/course-navigator/" },
+      { label: "GitHub", href: "https://github.com/ohmppatel920/course-navigator" },
+      { label: "Read the PRD", href: "https://github.com/ohmppatel920/course-navigator/blob/main/docs/PRD.md" },
+    ],
+  },
+  {
+    kind: "Project",
     title: "sideOut — Jump Lab",
     sub: "Solo build · computer vision",
     dates: "2026",
@@ -130,6 +146,31 @@ export const work: Work[] = [
     tags: ["Product Strategy", "Pricing", "Market Analysis", "Segmentation"],
     image: "/projects/glp1-pricing-web.jpg",
     links: [{ label: "Read the deck", href: "/Oral-GLP1-Pricing.pdf" }],
+  },
+  {
+    kind: "Project",
+    title: "Where Consumer Banking Breaks",
+    sub: "Self-initiated · consumer-fintech analysis",
+    dates: "2026",
+    blurb:
+      "Analyzed 446,614 CFPB credit-card and deposit complaints over 36 months through a reproducible pipeline that normalizes out bank-size effects. Found the modal card complaint is now about the dispute-resolution process, not the charge (74% of dispute complaints), with relief odds ranging 21–59% across issuers on the same issue. Closes on a tracked, evidence-first product recommendation.",
+    tags: ["Product Strategy", "Consumer Fintech", "Data Analysis", "Python / pandas", "NLP Clustering"],
+    image: "/projects/consumer-banking.jpg",
+    links: [
+      { label: "Read the deck", href: "/Consumer-Banking-Breaks.pdf" },
+      { label: "Explore the dashboard", href: "/consumer-banking-dashboard.html" },
+    ],
+  },
+  {
+    kind: "Project",
+    title: "A Royalty Lens on 2026",
+    sub: "Self-initiated · biopharma investment strategy",
+    dates: "2026",
+    blurb:
+      "A self-initiated investment point of view framing three 2026 biopharma royalty ideas — radiopharmaceuticals, non-opioid pain, and cardiometabolic — as one deliberately risk-spread portfolio rather than three hot drugs. Structured around a durability / risk / structure buy-box and built entirely from public, cited sources; closes on the questions that would pressure-test the thesis.",
+    tags: ["Investment Strategy", "Portfolio Construction", "Biopharma", "Market Research", "Deck Design"],
+    image: "/projects/royalty-lens.jpg",
+    links: [{ label: "Read the deck", href: "/Royalty-Lens-2026.pdf" }],
   },
   {
     kind: "Project",
