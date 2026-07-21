@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Where Consumer Banking Breaks — CFPB complaint analysis</title>
+<meta name="description" content="An interactive case file on 446,614 CFPB complaints about credit cards and checking/savings accounts. One finding: the credit-card dispute process is the largest and fastest-growing failure. Anonymized institutions, reproducible exhibits.">
+<meta property="og:title" content="Where Consumer Banking Breaks">
+<meta property="og:description" content="446,614 CFPB complaints, read as evidence. The modal card complaint is no longer about the charge — it is about the dispute process itself.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ohmppatel.dev/consumer-banking-dashboard.html">
+<meta property="og:image" content="https://ohmppatel.dev/projects/consumer-banking.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FDFDFB">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2314151A'/%3E%3Ctext x='32' y='43' font-family='Menlo,monospace' font-size='26' font-weight='bold' fill='%23FDFDFB' text-anchor='middle'%3EWB%3C/text%3E%3C/svg%3E">
 <script>/*!
  * Chart.js v4.5.1
  * https://www.chartjs.org
@@ -46,6 +55,8 @@ a { color: var(--blue-ink); }
   font-family: var(--mono); font-size: 10px; letter-spacing: .14em;
   text-transform: uppercase; color: var(--faint); padding-bottom: 14px;
   border-bottom: 1px solid var(--ink); flex-wrap: wrap; }
+.mast .row a { color: var(--blue-ink); text-decoration: none; }
+.mast .row a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .mast h1 { font-family: var(--disp); font-weight: 700;
   font-size: clamp(30px, 4.6vw, 44px); letter-spacing: -0.025em;
   line-height: 1.04; padding: 22px 0 10px; }
@@ -166,7 +177,7 @@ footer { font-family: var(--mono); font-size: 10px; color: var(--faint);
   <header class="mast">
     <div class="row">
       <span>CFPB Consumer Complaint Database · independent analysis</span>
-      <span id="subtitle"></span>
+      <span><span id="subtitle"></span> · <a href="https://ohmppatel.dev">ohmppatel.dev</a></span>
     </div>
     <h1>Where Consumer<br>Banking Breaks</h1>
     <p class="lede">Complaint records for credit cards and checking/savings
