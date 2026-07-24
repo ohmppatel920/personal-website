@@ -138,17 +138,6 @@ export const work: Work[] = [
   },
   {
     kind: "Project",
-    title: "What a Pill Is Worth",
-    sub: "Self-initiated pricing POV · product strategy",
-    dates: "2026",
-    blurb:
-      "A value-based pricing point of view: how should the first oral GLP-1s be priced against the injectables that built the obesity market? Decomposes the value drivers — efficacy gap, convenience, access, cost-to-serve — into an illustrative price ceiling, then argues for a volume/access play priced below it. Built entirely from public sources; every figure illustrative and tied to a named analog.",
-    tags: ["Product Strategy", "Pricing", "Market Analysis", "Segmentation"],
-    image: "/projects/glp1-pricing-web.jpg",
-    links: [{ label: "Read the deck", href: "/Oral-GLP1-Pricing.pdf" }],
-  },
-  {
-    kind: "Project",
     title: "Where Consumer Banking Breaks",
     sub: "Self-initiated · consumer-fintech analysis",
     dates: "2026",
