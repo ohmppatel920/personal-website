@@ -13,8 +13,8 @@ export default function Contact() {
       </div>
 
       <Reveal>
-        <p className="section-title" style={{ maxWidth: "20ch" }}>
-          Let&apos;s build something people actually use.
+        <p className="section-title" style={{ maxWidth: "22ch" }}>
+          Send me a problem nobody has scoped yet.
         </p>
         <p className="contact-big">
           <a href={`mailto:${profile.email}`} data-hover data-cursor="email">

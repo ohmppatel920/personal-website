@@ -21,7 +21,7 @@ export default function Home() {
           eyebrow="Experience"
           title={
             <>
-              Where I&apos;ve <span className="serif-em">built &amp; led</span>
+              Where I&apos;ve <span className="serif-em">led &amp; delivered</span>
             </>
           }
           idx="02 / 05"
@@ -31,8 +31,8 @@ export default function Home() {
         <WorkGrid
           id="projects"
           kind="Project"
-          eyebrow="Projects"
-          title="Things I've shipped"
+          eyebrow="Selected work"
+          title="Problems I went after"
           idx="03 / 05"
         />
         <Signature label="skills" />

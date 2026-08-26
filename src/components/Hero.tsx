@@ -8,12 +8,12 @@ const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 // The thesis line — split for typographic control + per-line mask reveal.
 const lines: React.ReactNode[] = [
-  <>I build software</>,
+  <>I find the problem</>,
   <>
-    people <span className="gradient-ink">use</span>,
+    worth <span className="gradient-ink">solving</span>,
   </>,
   <>
-    and <span className="serif-em">ship it.</span>
+    then <span className="serif-em">ship the fix.</span>
   </>,
 ];
 
