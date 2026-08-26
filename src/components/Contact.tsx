@@ -24,7 +24,7 @@ export default function Contact() {
       </Reveal>
 
       <div className="footer">
-        <span>© {year} Ohm Patel — Providence, RI</span>
+        <span>© {year} Ohm Patel · Providence, RI</span>
         <div className="footer-links">
           <a href={profile.links.github} target="_blank" rel="noopener noreferrer" data-hover>
             GitHub

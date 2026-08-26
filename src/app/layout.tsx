@@ -24,13 +24,13 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ohm Patel — Strategy, Healthcare & Technology",
+  title: "Ohm Patel · Strategy, Healthcare & Technology",
   description:
-    "Ohm Patel — a Brown engineer who scopes ambiguous problems, gets the data to say something, and lands on a recommendation — then builds what it implies. Eli Lilly, Yale Medicine, and self-directed market analysis across biopharma and consumer finance.",
+    "Ohm Patel is a Brown engineer who takes on problems nobody has defined yet and can build what the answer turns out to require. Experience at Eli Lilly and Yale Medicine, with self-directed market analysis in biopharma and consumer finance.",
   openGraph: {
-    title: "Ohm Patel — Strategy, Healthcare & Technology",
+    title: "Ohm Patel · Strategy, Healthcare & Technology",
     description:
-      "I find the problem worth solving, then ship the fix. Brown University · Engineering · Healthcare × Technology.",
+      "I find the problem worth solving, then ship the fix. Brown University, engineering, healthcare and technology.",
     type: "website",
   },
 };

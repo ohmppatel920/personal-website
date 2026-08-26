@@ -46,13 +46,11 @@ export default function About() {
         <div className="atmos-band">
           <ParallaxImage
             src={about.atmosphere}
-            alt="Ohm above the clouds at dawn"
+            alt="Cloud cover at sunset, seen from above"
             width={1798}
             height={2400}
           />
-          <p className="atmos-quote">
-            Above the fog — where the clearest thinking happens.
-          </p>
+          <p className="atmos-quote">Above the clouds.</p>
         </div>
       </Reveal>
     </section>
