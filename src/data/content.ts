@@ -30,11 +30,8 @@ export const about = {
   ],
   education: {
     school: "Brown University",
-    degrees: [
-      "M.S. Computer Science, expected May 2028",
-      "Sc.B. Mechanical Engineering, GPA 3.96 / 4.00",
-    ],
-    period: "Sep 2023 – May 2028",
+    degrees: ["Sc.B. Mechanical Engineering, GPA 3.96 / 4.00"],
+    period: "Sep 2023 – May 2027",
     honor: "APIA Nakupuna Foundation Scholarship",
     coursework:
       "Data Structures & Algorithms · Computer Systems · Object-Oriented Programming · Differential Equations",
