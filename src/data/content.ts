@@ -126,6 +126,21 @@ export const work: Work[] = [
   },
   {
     kind: "Project",
+    title: "Embecta: A High-Yield Credit Call",
+    sub: "Self-directed · three-statement credit model and memo",
+    dates: "2026",
+    blurb:
+      "Built a three-statement model of Embecta, the insulin pen-needle maker spun out of BD, from its 10-K and 10-Qs. It has a tranche-level debt schedule across four first-lien instruments, plus base, downside and stress cases that all run off one toggle. I modelled the US decline as a drug-utilization problem rather than a medtech growth rate: insulin users lost to GLP-1s and pumps, Part D payer mix, and private-label share. In the downside, leverage peaks at 4.8x and interest cover falls to 2.1x. The stress case breaks the 4.75x covenant in FY27. The two-page memo recommends the 5% 2030 secured notes at ~81 and names the number that breaks the thesis: gross margin near 50%.",
+    tags: ["Credit Analysis", "3-Statement Model", "Excel", "Debt Schedule", "Healthcare"],
+    image: "/projects/embecta-credit.jpg",
+    imgPos: "center",
+    links: [
+      { label: "Read the memo", href: "/Embecta-Credit-Memo.pdf" },
+      { label: "Download the model", href: "/Embecta-Credit-Model.xlsx" },
+    ],
+  },
+  {
+    kind: "Project",
     title: "A Royalty Lens on 2026",
     sub: "Self-directed · biopharma market strategy",
     dates: "2026",
