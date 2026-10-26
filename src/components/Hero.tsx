@@ -1,106 +1,46 @@
-"use client";
-
-import { motion, type Variants } from "framer-motion";
 import { profile } from "@/data/content";
-import Magnetic from "./Magnetic";
+import Reveal from "./Reveal";
 
-const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
-
-// The thesis line — split for typographic control + per-line mask reveal.
-const lines: React.ReactNode[] = [
-  <>I find the problem</>,
-  <>
-    worth <span className="gradient-ink">solving</span>,
-  </>,
-  <>
-    then <span className="serif-em">ship the fix.</span>
-  </>,
-];
-
-const reveal: Variants = {
-  hidden: { y: "110%" },
-  show: (i: number) => ({
-    y: "0%",
-    transition: { duration: 0.9, delay: 0.15 + i * 0.11, ease: EASE },
-  }),
-};
+const external = (href: string) => !href.startsWith("#");
 
 export default function Hero() {
   return (
     <header id="top" className="hero container">
-      <motion.p
-        className="eyebrow eyebrow--brown"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.05 }}
-      >
-        {profile.eyebrow}
-      </motion.p>
+      <Reveal y={12}>
+        <p className="kicker">{profile.eyebrow}</p>
+        <h1 className="hero-name">{profile.name}</h1>
+        <p className="hero-intro">{profile.intro}</p>
+      </Reveal>
 
-      <h1 className="hero-headline">
-        {lines.map((line, i) => (
-          <span className="line-mask" key={i}>
-            <motion.span
-              className="line-inner"
-              variants={reveal}
-              custom={i}
-              initial="hidden"
-              animate="show"
-            >
-              {line}
-            </motion.span>
-          </span>
-        ))}
-      </h1>
+      <Reveal y={12} delay={0.1}>
+        <div className="recent">
+          <p className="label">Recently</p>
+          <ul>
+            {profile.recently.map((r) => (
+              <li key={r.text}>
+                <a
+                  href={r.href}
+                  {...(external(r.href) ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                >
+                  {r.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      <motion.p
-        className="hero-intro"
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      >
-        {profile.intro}
-      </motion.p>
-
-      <motion.div
-        className="hero-meta"
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9, delay: 0.85, ease: [0.22, 1, 0.36, 1] }}
-      >
-        <Magnetic>
-          <a
-            className="btn btn--primary"
-            href={profile.links.resume}
-            target="_blank"
-            rel="noopener noreferrer"
-            data-hover
-            data-cursor="open"
-          >
-            Résumé <span className="arrow">↗</span>
+        <div className="hero-actions">
+          <a className="btn btn--solid" href={profile.links.resume} target="_blank" rel="noopener noreferrer">
+            Résumé
           </a>
-        </Magnetic>
-        <Magnetic strength={0.25}>
-          <a className="btn" href={profile.links.github} target="_blank" rel="noopener noreferrer" data-hover>
-            GitHub
-          </a>
-        </Magnetic>
-        <Magnetic strength={0.25}>
-          <a className="btn" href={profile.links.linkedin} target="_blank" rel="noopener noreferrer" data-hover>
+          <a className="btn" href={profile.links.linkedin} target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
-        </Magnetic>
-        <Magnetic strength={0.25}>
-          <a className="btn" href={`mailto:${profile.email}`} data-hover>
+          <a className="btn" href={`mailto:${profile.email}`}>
             Email
           </a>
-        </Magnetic>
-      </motion.div>
-
-      <div className="hero-scroll">
-        <span>{profile.place}</span>
-        <span>Scroll ↓</span>
-      </div>
+        </div>
+      </Reveal>
     </header>
   );
 }

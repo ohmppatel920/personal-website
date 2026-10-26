@@ -7,7 +7,7 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -15,26 +15,21 @@ export default function Nav() {
 
   return (
     <nav className="nav" data-scrolled={scrolled}>
-      <a href="#top" className="nav-mark" data-hover>
-        Ohm Patel<b>.</b>
-      </a>
-      <div className="nav-links">
-        {navLinks.map((l) => (
-          <a key={l.href} href={l.href}>
-            {l.label}
+      <div className="nav-inner">
+        <a href="#top" className="nav-name">
+          {profile.name}
+        </a>
+        <div className="nav-links">
+          {navLinks.map((l) => (
+            <a key={l.href} href={l.href}>
+              {l.label}
+            </a>
+          ))}
+          <a className="nav-resume" href={profile.links.resume} target="_blank" rel="noopener noreferrer">
+            Résumé
           </a>
-        ))}
+        </div>
       </div>
-      <a
-        className="nav-resume"
-        href={profile.links.resume}
-        target="_blank"
-        rel="noopener noreferrer"
-        data-hover
-        data-cursor="open"
-      >
-        Résumé ↗
-      </a>
     </nav>
   );
 }

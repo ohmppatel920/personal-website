@@ -1,58 +1,45 @@
+import Image from "next/image";
 import { about } from "@/data/content";
 import Reveal from "./Reveal";
-import ParallaxImage from "./ParallaxImage";
 
 export default function About() {
   return (
     <section id="about" className="section container">
-      <div className="section-head">
-        <div>
-          <p className="eyebrow">Profile</p>
-          <h2 className="section-title">The short version</h2>
-        </div>
-        <span className="idx">01 / 05</span>
-      </div>
+      <h2 className="section-title">About</h2>
 
       <div className="about-grid">
-        <Reveal>
+        <Reveal y={12}>
           <div className="about-copy">
             {about.paragraphs.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
           </div>
-        </Reveal>
 
-        <Reveal delay={0.1}>
           <div className="edu">
-            <p className="eyebrow">Education</p>
-            <div className="edu-school">{about.education.school}</div>
+            <p className="label">Education</p>
+            <p className="edu-school">{about.education.school}</p>
             {about.education.degrees.map((d) => (
-              <div className="edu-line" key={d}>
-                {d}
-              </div>
+              <p key={d}>{d}</p>
             ))}
-            <div className="edu-honor">
-              {about.education.honor} · {about.education.period}
-            </div>
-            <div className="edu-course">
-              <span className="edu-course-label">Coursework</span>
-              {about.education.coursework}
-            </div>
+            <p className="muted">
+              {about.education.period} · {about.education.honor}
+            </p>
+            <p className="muted">Coursework: {about.education.coursework}</p>
           </div>
         </Reveal>
-      </div>
 
-      <Reveal delay={0.05}>
-        <div className="atmos-band">
-          <ParallaxImage
-            src={about.atmosphere}
-            alt="Cloud cover at sunset, seen from above"
-            width={1798}
-            height={2400}
-          />
-          <p className="atmos-quote">Above the clouds.</p>
-        </div>
-      </Reveal>
+        <Reveal y={12} delay={0.08}>
+          <figure className="about-photo">
+            <Image
+              src={about.photo}
+              alt="Ohm on a ridge above the fog at sunset"
+              width={1798}
+              height={2400}
+              sizes="(max-width: 860px) 100vw, 380px"
+            />
+          </figure>
+        </Reveal>
+      </div>
     </section>
   );
 }

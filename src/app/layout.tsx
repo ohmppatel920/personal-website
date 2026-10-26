@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
+import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
-import SmoothScroll from "@/components/SmoothScroll";
-import CustomCursor from "@/components/CustomCursor";
-import AtmosphereCanvas from "@/components/AtmosphereCanvas";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -17,20 +14,14 @@ const inter = Inter({
   display: "swap",
 });
 
-const mono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono-jb",
-  display: "swap",
-});
-
 export const metadata: Metadata = {
-  title: "Ohm Patel · Strategy, Healthcare & Technology",
+  title: "Ohm Patel",
   description:
-    "Ohm Patel is a Brown engineer who takes on problems nobody has defined yet and can build what the answer turns out to require. Experience at Eli Lilly and Yale Medicine, with self-directed market analysis in biopharma and consumer finance.",
+    "Ohm Patel, Brown engineering student recruiting for consulting, strategy and product roles. Experience at Eli Lilly and Yale; analysis work in biopharma, consumer finance and credit.",
   openGraph: {
-    title: "Ohm Patel · Strategy, Healthcare & Technology",
+    title: "Ohm Patel",
     description:
-      "I find the problem worth solving, then ship the fix. Brown University, engineering, healthcare and technology.",
+      "Brown engineering student recruiting for consulting, strategy and product roles in healthcare, tech and finance.",
     type: "website",
   },
 };
@@ -39,16 +30,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="en"
-      className={`${fraunces.variable} ${inter.variable} ${mono.variable}`}
-    >
-      <body>
-        <AtmosphereCanvas />
-        <div className="grain" aria-hidden />
-        <CustomCursor />
-        <SmoothScroll>{children}</SmoothScroll>
-      </body>
+    <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
