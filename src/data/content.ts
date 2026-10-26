@@ -29,8 +29,7 @@ export const about = {
   paragraphs: [
     "I study mechanical engineering at Brown and graduate in 2027. Most of my work so far has been in healthcare, including R&D tooling at Eli Lilly and two summers of lab research at Yale.",
     "Over the past year I've taken on analysis projects of my own, on biopharma royalties, bank complaint data and a distressed medtech credit. I'm looking for consulting, strategy and product roles in healthcare, tech or finance.",
-    "I can also build. When a recommendation needs a prototype or a data pipeline I usually write it myself, so I have a rough idea of the cost before I suggest it.",
-    "Outside class I captain the men's volleyball team and direct the Brown Journal of Healthcare Advancement.",
+    "I can also build. When a recommendation needs a prototype or a data pipeline I usually write it myself, so I know roughly what it costs before I suggest it. Outside class I captain the men's volleyball team and direct the Brown Journal of Healthcare Advancement.",
   ],
   education: {
     school: "Brown University",
@@ -103,7 +102,7 @@ export const work: Work[] = [
     sub: "High-yield credit · three-statement model",
     dates: "2026",
     blurb:
-      "Embecta makes insulin pen needles, and its US sales are falling as patients switch to GLP-1s and payers push cheaper brands. I modelled the company from its 10-K and 10-Qs with a debt schedule for all four bonds and loans, then ran base, downside and stress cases. The memo recommends the 5% 2030 secured notes at about 81 and puts the break point at roughly 50% gross margin.",
+      "Embecta's US pen-needle sales are falling as patients move to GLP-1s and payers push cheaper brands. I built a three-statement model from its filings, with a debt schedule covering all four bonds and loans and three scenarios. The memo recommends the 5% 2030 notes at about 81 and puts the break point near 50% gross margin.",
     tags: ["Credit analysis", "Excel", "Healthcare"],
     image: "/projects/embecta-credit.jpg",
     imgPos: "center",
@@ -118,7 +117,7 @@ export const work: Work[] = [
     sub: "Market analysis · consumer fintech",
     dates: "2026",
     blurb:
-      "Analyzed 446,614 CFPB credit-card and deposit complaints over 36 months, adjusted for bank size. How a bank handles the dispute drives 74% of dispute complaints, and a customer's odds of getting relief run from 21% to 59% depending on the issuer. The deck ends on one recommendation and the metric that would show it worked.",
+      "Analyzed 446,614 CFPB credit-card and deposit complaints over 36 months, adjusted for bank size. How banks handle disputes drives 74% of dispute complaints, and a customer's odds of relief run from 21% to 59% depending on the issuer.",
     tags: ["Market analysis", "Python", "Financial services"],
     image: "/projects/consumer-banking.jpg",
     links: [
@@ -132,7 +131,7 @@ export const work: Work[] = [
     sub: "Investment view · biopharma",
     dates: "2026",
     blurb:
-      "Three 2026 biopharma royalty ideas in radiopharmaceuticals, non-opioid pain and cardiometabolic disease, sized as one portfolio with the risk spread across tiers. Built on public sources and cited throughout. It closes with the questions that would change the view.",
+      "Three 2026 royalty ideas in radiopharmaceuticals, non-opioid pain and cardiometabolic disease, sized as one portfolio with the risk spread across tiers. Built from public sources, and it ends with the questions that would change the view.",
     tags: ["Healthcare strategy", "Market research"],
     image: "/projects/royalty-lens.jpg",
     links: [{ label: "Deck (PDF)", href: "/Royalty-Lens-2026.pdf" }],
@@ -143,7 +142,7 @@ export const work: Work[] = [
     sub: "Product · user research to shipped app",
     dates: "2026",
     blurb:
-      "Interviewed students about how they actually choose courses, wrote a PRD, and shipped a planner over Brown's roughly 5,400-section catalog. Schedule conflicts are checked in plain code outside the model, and recommendations can only cite ratings that exist in the data.",
+      "Interviewed students about how they choose courses, wrote the PRD, and shipped a planner over Brown's 5,400-section catalog. Conflict checks run in plain code, and recommendations can only cite ratings that exist in the data.",
     tags: ["User research", "PRD", "Next.js"],
     image: "/projects/cairn.jpg",
     imgPos: "top",
@@ -158,7 +157,7 @@ export const work: Work[] = [
     sub: "Product · competitive analysis and roadmap",
     dates: "2026 – Present",
     blurb:
-      "Compared Hudl, Balltime and the open-source options on features and price against what college teams spend, which is about $1,200 a year. Shipped the first release from that roadmap, a pose-estimation pipeline that measures jump height and approach speed from one phone video.",
+      "Compared Hudl, Balltime and open-source tools against what college teams spend, about $1,200 a year. The first release from that roadmap measures jump height and approach speed from one phone video.",
     tags: ["Competitive analysis", "Roadmap", "Python"],
     image: "/projects/sideout.jpg",
     imgPos: "center 62%",

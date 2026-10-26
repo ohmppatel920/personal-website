@@ -8,7 +8,7 @@ export default function Skills() {
         {skillGroups.map((g) => (
           <div key={g.label}>
             <dt>{g.label}</dt>
-            <dd>{g.items.join(", ")}</dd>
+            <dd>{g.items.join(" · ")}</dd>
           </div>
         ))}
       </dl>

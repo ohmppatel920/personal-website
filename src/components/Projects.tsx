@@ -11,8 +11,8 @@ export default function Projects() {
 
       <div className="cards">
         {items.map((w, i) => (
-          <Reveal key={w.title} y={12} delay={Math.min((i % 2) * 0.06, 0.06)}>
-            <article className="card">
+          <Reveal key={w.title} y={12} className={i === 0 ? "span-2" : undefined}>
+            <article className={i === 0 ? "card card--wide" : "card"}>
               <div className="card-thumb">
                 <WorkThumb work={w} />
               </div>
